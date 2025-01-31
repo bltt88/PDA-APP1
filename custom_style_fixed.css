@@ -1,0 +1,180 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#app-content, #task-screen, #afmetingen-screen, #notities-screen, #overzicht-screen, #handtekening-screen {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    background-color: #005a9c;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.green-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.red-button {
+    background-color: #D32F2F;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: white;
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+ul li h2 {
+    background: none;
+    color: #333;
+    padding: 0;
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.search-bar {
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.header {
+    background-color: #005a9c;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+}
+
+.task-list-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background: white;
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-list-item:hover {
+    background-color: #f1f1f1;
+}
+
+.task-list-item h2 {
+    font-size: 16px;
+    color: #005a9c;
+}
+
+.task-list-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.opdrachten-container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.opdrachten-item {
+    background: white;
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.opdrachten-item h2 {
+    font-size: 18px;
+    color: #005a9c;
+}
+
+.opdrachten-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Fix voor het correct weergeven van de opdrachtenlijst */
+#task-list li {
+    background: white;
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #005a9c;
+}
+
+#task-list li:hover {
+    background: #e3f2fd;
+}
+
+#task-list li h2 {
+    color: #005a9c;
+    font-size: 18px;
+}
+
+#task-list li p {
+    color: #555;
+    font-size: 14px;
+}
