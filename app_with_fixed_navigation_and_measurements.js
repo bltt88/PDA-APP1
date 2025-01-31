@@ -78,7 +78,7 @@ function openTask(taskId) {
     `;
 }
 
-function openAfmetingen(taskId) {
+function openVolgende(taskId) {
     document.body.innerHTML = `
         <div id="afmetingen-screen">
             <button class="green-button" onclick="openTask(${taskId})">← Terug naar opdracht</button>
