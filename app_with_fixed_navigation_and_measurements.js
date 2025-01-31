@@ -82,8 +82,8 @@ function openVolgende(taskId) {
     document.body.innerHTML = `
         <div id="afmetingen-screen">
             <button class="green-button" onclick="openTask(${taskId})">← Terug naar opdracht</button>
-            <h2>Afmetingen</h2>
-            ${generateAfmetingenInputs(taskId)}
+            <h2Volgende</h2>
+            ${generateVolgendenputs(taskId)}
             <button class="green-button" onclick="openNotities(${taskId})">Notities</button>
         </div>
     `;
