@@ -132,7 +132,9 @@ function openHandtekening(taskId) {
 function navigateTo(address) {
     const encodedAddress = encodeURIComponent(address.trim());
     window.open(`https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`, "_blank");
+
 }
+
 function getTasks() {
     return [
         { id: 1, klant: "Muhammed Bolat", adres: "Willem Kloosstraat 27, Almelo", contact: "0621527392", email: "muhammed.bolat@gmail.com", werkzaamheden: "Tapijt leggen", prijs: "€250", product: "TAPIJT SILVERTON TAUPE" },
