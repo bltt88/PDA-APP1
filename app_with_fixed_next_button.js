@@ -114,6 +114,25 @@ function calculateArea(taskId, index) {
     }
 }
 
+function openHandtekening(taskId) {
+    document.body.innerHTML = `
+        <div id="handtekening-screen">
+            <button class="green-button" onclick="openOverzicht(${taskId})">â Terug naar Overzicht</button>
+            <h2>Handtekening klant</h2>
+            <canvas id="signature-pad" width="100%" height="300" style="border:1px solid #000; touch-action: none;"></canvas>
+            <br>
+            <button class="green-button" onclick="clearSignature()">Handtekening Wissen</button>
+            <button class="green-button" onclick="verzendOpdracht(${taskId})">â Opdracht afronden</button>
+        </div>
+    `;
+    setupSignaturePad();
+
+}
+
+function navigateTo(address) {
+    const encodedAddress = encodeURIComponent(address.trim());
+    window.open(`https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`, "_blank");
+}
 function getTasks() {
     return [
         { id: 1, klant: "Muhammed Bolat", adres: "Willem Kloosstraat 27, Almelo", contact: "0621527392", email: "muhammed.bolat@gmail.com", werkzaamheden: "Tapijt leggen", prijs: "€250", product: "TAPIJT SILVERTON TAUPE" },
