@@ -1,3 +1,15 @@
+<body>
+    <div id="login-screen">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Gebruikersnaam">
+        <input type="password" id="password" placeholder="Wachtwoord">
+        <button onclick="checkLogin()">Inloggen</button>
+        <p id="login-error" style="color: red;"></p>
+    </div>
+    <div id="app-content" style="display: none;">
+        <ul id="task-list"></ul> <!-- Hier worden de opdrachten getoond -->
+    </div>
+</body>
 <!DOCTYPE html>
 <html lang="en">
 <head>
